@@ -21,7 +21,7 @@ renamed as (
 
 )
 
-select *  where extract(year from pickup_datetime) =2019
+select * from source  where extract(year from pickup_datetime) =2019
 {% if var('is_test_run', default=true) %}
 
   limit 100
